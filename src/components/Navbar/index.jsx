@@ -15,8 +15,8 @@ const NavbarComponent = () =>{
         "link": {
     "base": "block py-2 pl-3 pr-4 md:p-0 text-lg",
     "active": {
-      "on": " text-color-primary font-bold",
-      "off": " text-color-secondary hover:bg-color-secondary hover:text-color-white md:border-0 md:hover:bg-transparent hover:bg-opacity-5 hover:text-color-primary md:dark:hover:bg-transparent hover:font-bold"
+      "on": " text-color-primary md:text-color-primary font-bold",
+      "off": "text-color-secondary hover:bg-color-secondary hover:text-color-primary md:border-0 hover:bg-opacity-5  md:hover:bg-transparent  md:dark:hover:bg-transparent hover:font-bold"
     },
     "disabled": {
       "on": "text-gray-400 hover:cursor-not-allowed dark:text-gray-600",
