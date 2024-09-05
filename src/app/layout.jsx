@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <meta name="keywords" content="autoshop samarinda, anti karat mobil samarinda, samarinda, coating mobil samarinda, Kaca Film Mobil samarinda, kabuki, kabuki autoshop, kabuki autoshop samarinda" />
       <body className={inter.className}>
         <NavbarComponent/>
       {children}
