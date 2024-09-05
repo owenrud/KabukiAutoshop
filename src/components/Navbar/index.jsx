@@ -51,12 +51,11 @@ const NavbarComponent = () =>{
           <Navbar.Link as ={Link} className={segment == null ? "text-color-primary font-bold bg-color-primary md:bg-transparent bg-opacity-10 hover:text-color-primary hover:bg-color-primary hover:bg-opacity-25 hover:cursor-disabled":"text-color-secondary hover:bg-color-primary md:hover:bg-transparent hover:text-color-primary md:border-0  hover:font-bold"} theme={customTheme} href="/" > 
             Home
           </Navbar.Link>
-          <Navbar.Link as={Link} className="hover:text-color-primary hover:bg-color-primary hover:bg-opacity-10" href="#">
+          <Navbar.Link as={Link} className="hover:text-color-primary hover:bg-color-primary hover:bg-opacity-10" href="#about">
             About
           </Navbar.Link>
-          <Navbar.Link as={Link} className="hover:bg-color-primary hover:bg-opacity-10" href="#">Services</Navbar.Link>
-          <Navbar.Link as={Link} className="hover:bg-color-primary hover:bg-opacity-10" href="#">Pricing</Navbar.Link>
-          <Navbar.Link as={Link} className="hover:bg-color-primary hover:bg-opacity-10" href="#">Contact</Navbar.Link>
+          <Navbar.Link as={Link} className="hover:bg-color-primary hover:bg-opacity-10" href="#services">Services</Navbar.Link>
+          <Navbar.Link as={Link} className="hover:bg-color-primary hover:bg-opacity-10" href="#contact">Contact</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
       </Flowbite>
