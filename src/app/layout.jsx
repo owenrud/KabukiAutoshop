@@ -2,6 +2,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavbarComponent from "@/components/Navbar";
 import { FooterComponent } from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <NavbarComponent />
         {children}
         <FooterComponent />
+        <Analytics />
       </body>
       
     </html>
