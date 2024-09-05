@@ -25,7 +25,7 @@ export function FooterComponent() {
     };
   return (
     <Flowbite theme={{ theme: customTheme }}>
-    <Footer >
+    <Footer  className="sticky top-full mt-auto">
       <div className="w-full">
         <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>

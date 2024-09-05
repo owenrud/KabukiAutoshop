@@ -2,18 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-.ImageMobile{
-  display :none
-}
-.ImageNormal{
-  display :block
+.Image {
+  width: 100%;
+  height: 100%;
+  animation: change 18s infinite ease-out;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  justify-content: center;
 }
 
-@media only screen and (max-width:768px) {
-  .ImageMobile{
-    display :block
+@keyframes change {
+  0% {
+    background-image: url(../images/detailing.jpeg);
   }
-  .ImageNormal{
-    display: none;
+  20% {
+    background-image: url(../images/bannerimg.jpg);
+  }
+  40% {
+    background-image: url(../images/antikarat.jpg);
+  }
+  60% {
+    background-image: url(../images/coatingcar.jpg);
+  }
+  80% {
+    background-image: url(../images/filmcar.jpg);
+  }
+  100%{
+    background-image: url(../images/detailing.jpeg);
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .Image {
+    width: 100%;
+    height: 500px;
+    
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .Image {
+    width: 100%;
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 1921px) and (max-width: 2560px) {
+  .Image {
+    width: 100%;
+    height: 1300px;
   }
 }

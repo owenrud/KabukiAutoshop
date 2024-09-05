@@ -8,7 +8,7 @@ const NavbarComponent = () =>{
     const customTheme = {
         navbar: {
           "root": {
-    "base": "bg-color-white px-2 py-6 sm:px-4 ",
+    "base": "bg-color-white px-2 py-6 sm:px-4 z-40",
     "rounded": {
       "on": "rounded",
       "off": ""
@@ -34,7 +34,7 @@ const NavbarComponent = () =>{
     }
   },
   "toggle": {
-    "base": "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden",
+    "base": "inline-flex items-center rounded-lg p-2 text-sm text-color-primary hover:bg-color-white focus:outline-none focus:ring-2 focus:ring-color-primary  md:hidden",
     "icon": "h-6 w-6 shrink-0"
   }
       }
@@ -46,9 +46,9 @@ const NavbarComponent = () =>{
           <img src="./favicon.ico" className="mr-3 h-6 sm:h-9" alt=" Logo" />
           <span className="self-center whitespace-nowrap text-lg md:text-3xl font-bold">Kabuki Autoshop Samarinda</span>
         </Navbar.Brand>
-        <Navbar.Toggle />
+        <Navbar.Toggle  className="text-color-primary focus:bg-color-primary focus:ring-color-primary focus:text-color-white"/>
         <Navbar.Collapse theme={customTheme}>
-          <Navbar.Link as ={Link} className={segment == null ? "text-color-primary font-bold bg-color-primary bg-opacity-10 ":"text-color-secondary hover:bg-color-primary md:hover:bg-transparent hover:text-color-primary md:border-0  hover:font-bold"} theme={customTheme} href="/" > 
+          <Navbar.Link as ={Link} className={segment == null ? "text-color-primary font-bold bg-color-primary md:bg-transparent bg-opacity-10 hover:text-color-primary hover:bg-color-primary hover:bg-opacity-25 hover:cursor-disabled":"text-color-secondary hover:bg-color-primary md:hover:bg-transparent hover:text-color-primary md:border-0  hover:font-bold"} theme={customTheme} href="/" > 
             Home
           </Navbar.Link>
           <Navbar.Link as={Link} className="hover:text-color-primary hover:bg-color-primary hover:bg-opacity-10" href="#">
